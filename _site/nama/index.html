@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halaman Dua</title>
+	<title>Nama</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Ini adalah latihan Alpine JS">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,8 @@
 </head>
 <body>
 	
-<p>Halo...</p>
+<div x-data="{nama: ''}" x-init="nama = location.search.split('?')[1]">
+	<p>Hai <span x-text='nama'></span></p>
+</div>
 </body>
 </html>

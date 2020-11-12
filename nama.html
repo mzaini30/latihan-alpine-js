@@ -1,0 +1,8 @@
+---
+layout: layout
+judul: Nama
+---
+
+<div x-data="{nama: ''}" x-init="nama = location.search.split('?')[1]">
+	<p>Hai <span x-text='nama'></span></p>
+</div>
